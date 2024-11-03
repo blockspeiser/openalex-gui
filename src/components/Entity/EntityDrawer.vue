@@ -103,7 +103,7 @@ export default {
       this.isLoading = true
       // console.log("EntityDrawer getEntityData() loading", this.isLoading)
       await sleep(2000)
-      this.entityData = await api.get(this.id)
+      this.entityData = await api.getEntity(this.id)
       this.isLoading = false
       // console.log("EntityDrawer getEntityData() done loading", this.isLoading)
     },

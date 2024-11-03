@@ -126,7 +126,8 @@ const api = (function () {
 
 
     const getEntity = async function (id) {
-        const myUrl = makeUrl(id)
+        const path = "/works/" + id.toUpperCase()
+        const myUrl = makeUrl(path)
         const resp = await getUrl(myUrl)
         return resp
     }
